@@ -38,13 +38,13 @@
 
           if (move_uploaded_file($file_tmp, $file_destination)) {
             echo $file_destination
-            // code...
+            
           }
-          // code...
+          
         }
-        // code...
+        
       }
-      // code...
+      
     }
   }
 
