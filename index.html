@@ -144,14 +144,16 @@
   <div class="left"></div>
   <div class="right">
     <h3>CONTACT FORM </h3>
-    <form class="great" action="#" method="post" onsubmit="return validation();">
+    <form class="great" enctype="multipart/form-data" action="#" method="post" onsubmit="return validation();" action="contact-form-handler.php">
     <label for="name">Name</label>
     <input type="text" minlength = "4" class="field" name="name" required placeholder="Your name" id="name"><br>
     <label for="email">Email</label>
     <input type="email" class="field" required placeholder="Your email" name="email" id="email"><br>
     <label for="textarea">Title  </label>
-    <input type="text" class="field" required placeholder="Title" name="textarea" id="textarea"><br>
-    <textarea class="field" required minlength = "20" placeholder="Message" rows="8" cols="50"></textarea><br>
+    <input type="text" class="field" required placeholder="Title" name="message" id="textarea"><br>
+    <input type="file" name="file">
+    <input type="submit" value="upload"><br>
+    <textarea name="message" class="field" required minlength = "20" placeholder="Message" rows="8" cols="50"></textarea><br>
     <input type="submit" value="Send Message" name="Send Message">
     </form>
 
